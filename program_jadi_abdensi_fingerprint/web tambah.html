@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Formulir</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<style>
+.container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center; /* Menengahkan konten di dalam container */
+}
+
+.form-group {
+  margin-bottom: 15px;
+  text-align: left; /* Menengahkan label dan input di dalam form-group */
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  text-align: center; /* Menengahkan label */
+}
+
+input[type="number"],
+select {
+  width: calc(100% - 22px); /* Lebar input dikurangi dengan padding */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center; /* Menengahkan teks di dalam input */
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+</style>
+<body>
+
+<div class="container">
+  <h2>Absensi</h2>
+  <form action="#" method="post">
+    <div class="form-group"><br>
+      <input type="number" id="inputText" name="inputText" min = "1" max= "120" required>
+    </div>
+    <div class="form-group">
+      <select id="opsi" name="opsi">
+        <option value="1">Tambah</option>
+        <option value="2">Hapus</option>
+      </select>
+    </div>
+    
+    <button type="submit">Submit</button>
+  </form>
+</div>
+
+</body>
+</html>
